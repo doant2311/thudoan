@@ -1,0 +1,3182 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đoàn Anh Thư | Portfolio - Account Executive & Social Media</title>
+  <meta name="description" content="Portfolio chuyên nghiệp của Đoàn Anh Thư - Account Executive & Social Media Specialist. Quản trị dự án marketing, điều phối đa kênh, truyền thông tích hợp.">
+  <meta name="keywords" content="Đoàn Anh Thư, Account Executive, Social Media, Marketing Project Management, Portfolio">
+  
+  <!-- Favicon biểu trưng -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%231d4ed8'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='48' font-weight='bold' fill='white'>AT</text></svg>">
+
+  <!-- Google Fonts: Be Vietnam Pro & Plus Jakarta Sans hỗ trợ tiếng Việt tuyệt đối sắc nét -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       HỆ THỐNG BIẾN MÀU SẮC & THÔNG SỐ (DESIGN SYSTEM)
+       Tông màu: Xanh hoàng gia (Royal Navy), Indigo & Xanh công nghệ hiện đại
+       Phù hợp hoàn hảo với vị trí Account Executive & Social Media
+       ========================================================================== */
+    :root {
+      --color-primary: #1E40AF;        /* Xanh dương chủ đạo - Tin cậy & Trách nhiệm */
+      --color-primary-dark: #0F172A;   /* Navy trầm sang trọng */
+      --color-primary-light: #3B82F6;  /* Xanh sáng tươi tắn */
+      --color-primary-soft: #EFF6FF;   /* Nền xanh nhạt điểm xuyết */
+      --color-accent: #0284C7;         /* Xanh ngọc biển năng động */
+      --color-accent-subtle: #E0F2FE;
+      --color-canva: #7D2AE8;          /* Màu nhận diện Canva đặc trưng */
+      --color-canva-hover: #651FC2;
+      --color-zalo: #0068FF;           /* Màu thương hiệu Zalo */
+      
+      --color-text-main: #0F172A;      /* Chữ đen navy đậm sắc nét */
+      --color-text-secondary: #334155; /* Chữ mô tả dễ đọc */
+      --color-text-muted: #64748B;     /* Chữ phụ chú */
+      --color-text-light: #94A3B8;     /* Nhãn mờ */
+
+      --bg-page: #F8FAFC;              /* Nền toàn trang - Xám sáng thanh lịch */
+      --bg-surface: #FFFFFF;           /* Nền thẻ nội dung */
+      --bg-surface-alt: #F1F5F9;       /* Nền khối bổ trợ */
+      --border-color: #E2E8F0;         /* Viền mỏng tinh tế */
+      --border-focus: #93C5FD;
+
+      --badge-placeholder-bg: #FEF3C7; /* Vàng nhạt cho các ô dữ liệu placeholder */
+      --badge-placeholder-text: #92400E;
+      --badge-placeholder-border: #FCD34D;
+
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+      --radius-full: 9999px;
+
+      --shadow-subtle: 0 1px 3px rgba(15, 23, 42, 0.04), 0 1px 2px rgba(15, 23, 42, 0.02);
+      --shadow-card: 0 4px 18px -2px rgba(15, 23, 42, 0.06), 0 2px 8px -2px rgba(15, 23, 42, 0.04);
+      --shadow-hover: 0 16px 32px -4px rgba(15, 23, 42, 0.12), 0 6px 12px -2px rgba(15, 23, 42, 0.05);
+      --shadow-canva: 0 10px 25px -4px rgba(125, 42, 232, 0.35);
+
+      --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-bounce: 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    /* CSS Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--color-text-main);
+      line-height: 1.65;
+      overflow-x: hidden;
+      padding-bottom: 74px; /* Chừa khoảng trống cho thanh bottom action bar trên mobile */
+    }
+
+    @media (min-width: 769px) {
+      body {
+        padding-bottom: 0;
+      }
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    button, input, textarea {
+      font-family: inherit;
+    }
+
+    /* Bố cục container */
+    .container {
+      width: 100%;
+      max-width: 1160px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    /* Section Styling Chung */
+    section {
+      padding: 70px 0;
+      position: relative;
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 48px 0;
+      }
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 48px auto;
+    }
+
+    .section-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-primary);
+      background-color: var(--color-primary-soft);
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      margin-bottom: 12px;
+      border: 1px solid rgba(59, 130, 246, 0.2);
+    }
+
+    .section-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 2.125rem;
+      font-weight: 800;
+      color: var(--color-primary-dark);
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin-bottom: 14px;
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 1.75rem;
+      }
+      .section-header {
+        margin-bottom: 32px;
+      }
+    }
+
+    /* ==========================================================================
+       TAG PLACEHOLDER TRỰC QUAN (GIÚP NHẬN BIẾT & DỄ DÀNG ĐIỀN THÔNG TIN BỔ SUNG)
+       ========================================================================== */
+    .placeholder-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--badge-placeholder-bg);
+      color: var(--badge-placeholder-text);
+      border: 1px dashed var(--badge-placeholder-border);
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      vertical-align: middle;
+      cursor: help;
+    }
+
+    .placeholder-box {
+      background: linear-gradient(135deg, #F8FAFC 0%, #EFF6FF 100%);
+      border: 2px dashed #CBD5E1;
+      border-radius: var(--radius-md);
+      padding: 24px 18px;
+      text-align: center;
+      color: var(--color-text-muted);
+      position: relative;
+      transition: all var(--transition-fast);
+    }
+
+    .placeholder-box:hover {
+      border-color: var(--color-primary-light);
+      background: #EFF6FF;
+    }
+
+    /* ==========================================================================
+       THANH ĐIỀU HƯỚNG (HEADER / NAVBAR)
+       ========================================================================== */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      transition: all var(--transition-fast);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    .nav-brand {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-name {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--color-primary-dark);
+      letter-spacing: -0.01em;
+      line-height: 1.15;
+    }
+
+    .brand-role {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: var(--color-text-secondary);
+      position: relative;
+      padding: 6px 0;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--color-primary);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--color-primary);
+      transition: width var(--transition-fast);
+      border-radius: var(--radius-full);
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Các kiểu Button */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: var(--radius-full);
+      font-size: 0.9375rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all var(--transition-bounce);
+      white-space: nowrap;
+      text-decoration: none;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .btn-primary {
+      background-color: var(--color-primary);
+      color: #FFFFFF;
+      box-shadow: 0 4px 12px rgba(30, 64, 175, 0.25);
+    }
+
+    .btn-primary:hover {
+      background-color: #1D4ED8;
+      box-shadow: 0 6px 18px rgba(30, 64, 175, 0.35);
+      transform: translateY(-2px);
+    }
+
+    .btn-canva {
+      background: linear-gradient(135deg, #7D2AE8 0%, #00C4CC 100%);
+      color: #FFFFFF;
+      box-shadow: var(--shadow-canva);
+      position: relative;
+      overflow: hidden;
+      font-weight: 700;
+    }
+
+    .btn-canva::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(255, 255, 255, 0.15);
+      opacity: 0;
+      transition: opacity var(--transition-fast);
+    }
+
+    .btn-canva:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px -2px rgba(125, 42, 232, 0.45);
+    }
+
+    .btn-canva:hover::before {
+      opacity: 1;
+    }
+
+    .btn-outline {
+      background-color: #FFFFFF;
+      color: var(--color-primary-dark);
+      border-color: var(--border-color);
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .btn-outline:hover {
+      background-color: var(--bg-surface-alt);
+      border-color: #CBD5E1;
+      transform: translateY(-2px);
+    }
+
+    .btn-sm {
+      padding: 7px 14px;
+      font-size: 0.8125rem;
+    }
+
+    .btn-lg {
+      padding: 14px 28px;
+      font-size: 1.0625rem;
+    }
+
+    /* Mobile Hamburger Menu */
+    .mobile-toggle {
+      display: none;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      color: var(--color-primary-dark);
+    }
+
+    @media (max-width: 900px) {
+      .nav-menu {
+        display: none;
+      }
+      .nav-actions .btn-nav-desktop {
+        display: none;
+      }
+      .mobile-toggle {
+        display: block;
+      }
+    }
+
+    /* Mobile Drawer */
+    .mobile-drawer {
+      position: fixed;
+      top: 72px;
+      left: 0;
+      right: 0;
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--border-color);
+      padding: 24px 20px;
+      box-shadow: var(--shadow-hover);
+      display: none;
+      flex-direction: column;
+      gap: 14px;
+      z-index: 99;
+      transform: translateY(-10px);
+      opacity: 0;
+      transition: all var(--transition-fast);
+    }
+
+    .mobile-drawer.active {
+      display: flex;
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .mobile-drawer a {
+      font-size: 1.0625rem;
+      font-weight: 600;
+      color: var(--color-text-main);
+      padding: 10px 0;
+      border-bottom: 1px solid #F1F5F9;
+    }
+
+    /* ==========================================================================
+       HERO SECTION (BANNER ĐẦU TRANG)
+       ========================================================================== */
+    .hero-section {
+      padding-top: 50px;
+      padding-bottom: 70px;
+      background: radial-gradient(circle at 85% 15%, rgba(224, 242, 254, 0.7) 0%, rgba(248, 250, 252, 0) 50%),
+                  radial-gradient(circle at 10% 80%, rgba(239, 246, 255, 0.8) 0%, rgba(248, 250, 252, 0) 40%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #065F46;
+      background: #D1FAE5;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      margin-bottom: 20px;
+      border: 1px solid #A7F3D0;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #10B981;
+      border-radius: var(--radius-full);
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5); }
+      70% { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+
+    .hero-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 2.85rem;
+      font-weight: 800;
+      line-height: 1.18;
+      letter-spacing: -0.03em;
+      color: var(--color-primary-dark);
+      margin-bottom: 14px;
+    }
+
+    .hero-title .highlight {
+      background: linear-gradient(120deg, #1E40AF 0%, #0284C7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+
+    .hero-roles {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .hero-roles .role-pill {
+      background: #FFFFFF;
+      border: 1px solid var(--border-color);
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      font-size: 0.9375rem;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .hero-bio {
+      font-size: 1.0625rem;
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      margin-bottom: 32px;
+      max-width: 580px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 40px;
+    }
+
+    .hero-stats-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stat-number {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.625rem;
+      font-weight: 800;
+      color: var(--color-primary-dark);
+      line-height: 1.1;
+    }
+
+    .stat-label {
+      font-size: 0.8125rem;
+      color: var(--color-text-muted);
+      margin-top: 4px;
+      line-height: 1.35;
+    }
+
+    /* Cột ảnh đại diện của Hero */
+    .hero-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .avatar-card-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 380px;
+    }
+
+    .avatar-decor-bg {
+      position: absolute;
+      inset: -12px;
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.15) 0%, rgba(125, 42, 232, 0.12) 100%);
+      border-radius: var(--radius-xl);
+      transform: rotate(-3deg);
+      z-index: 1;
+    }
+
+    .avatar-card {
+      position: relative;
+      background: #FFFFFF;
+      border-radius: var(--radius-xl);
+      padding: 16px;
+      box-shadow: var(--shadow-card);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      z-index: 2;
+    }
+
+    .avatar-img-container {
+      width: 100%;
+      aspect-ratio: 4/5;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: linear-gradient(145deg, #1E293B, #0F172A);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .avatar-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    /* Fallback khi chưa upload ảnh cá nhân */
+    .avatar-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+      color: #FFFFFF;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(135deg, #1E3A8A 0%, #1E1B4B 100%);
+    }
+
+    .avatar-placeholder-circle {
+      width: 96px;
+      height: 96px;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.12);
+      border: 2px dashed rgba(255, 255, 255, 0.4);
+      display: grid;
+      place-items: center;
+      margin-bottom: 16px;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .avatar-floating-badge {
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #FFFFFF;
+      padding: 10px 18px;
+      border-radius: var(--radius-full);
+      box-shadow: var(--shadow-hover);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      white-space: nowrap;
+      z-index: 3;
+      border: 1px solid var(--border-color);
+    }
+
+    .floating-badge-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: var(--radius-full);
+      background: var(--color-primary-soft);
+      color: var(--color-primary);
+      display: grid;
+      place-items: center;
+    }
+
+    .floating-badge-text {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      color: var(--color-primary-dark);
+      line-height: 1.2;
+    }
+
+    .floating-badge-sub {
+      font-size: 0.6875rem;
+      color: var(--color-text-muted);
+      font-weight: 500;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .hero-title {
+        font-size: 2.25rem;
+      }
+      .hero-visual {
+        order: -1;
+      }
+      .avatar-card-wrapper {
+        max-width: 320px;
+      }
+    }
+
+    /* ==========================================================================
+       GIỚI THIỆU & THẾ MẠNH CHUYÊN MÔN (ABOUT & CORE COMPETENCIES)
+       ========================================================================== */
+    .about-section {
+      background-color: #FFFFFF;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .about-card {
+      background: var(--bg-page);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      border: 1px solid var(--border-color);
+      height: 100%;
+    }
+
+    .about-heading {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.375rem;
+      font-weight: 700;
+      color: var(--color-primary-dark);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .about-heading-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-md);
+      background: var(--color-primary-soft);
+      color: var(--color-primary);
+      display: grid;
+      place-items: center;
+    }
+
+    .about-prose {
+      font-size: 1rem;
+      color: var(--color-text-secondary);
+      line-height: 1.75;
+      margin-bottom: 24px;
+    }
+
+    .about-info-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .info-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px dashed var(--border-color);
+    }
+
+    .info-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .info-label {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      min-width: 100px;
+    }
+
+    .info-value {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: var(--color-text-main);
+    }
+
+    /* Khối năng lực chuyên môn (Competency Cards) */
+    .competency-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .comp-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      padding: 20px;
+      border: 1px solid var(--border-color);
+      transition: all var(--transition-fast);
+    }
+
+    .comp-card:hover {
+      border-color: var(--color-primary-light);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-card);
+    }
+
+    .comp-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-sm);
+      background: var(--color-primary-soft);
+      color: var(--color-primary);
+      display: grid;
+      place-items: center;
+      margin-bottom: 12px;
+    }
+
+    .comp-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--color-primary-dark);
+      margin-bottom: 8px;
+    }
+
+    .comp-skills {
+      list-style: none;
+      font-size: 0.8125rem;
+      color: var(--color-text-secondary);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .comp-skills li {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .comp-skills li::before {
+      content: '•';
+      color: var(--color-primary-light);
+      font-weight: bold;
+    }
+
+    @media (max-width: 900px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+      .competency-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ==========================================================================
+       SECTION 3 DỰ ÁN CHIẾN LƯỢC (3 STRATEGIC PROJECTS)
+       Cấu trúc bắt buộc: Mục tiêu – Vai trò – Kết quả
+       ========================================================================== */
+    .projects-section {
+      background-color: var(--bg-page);
+    }
+
+    .project-filter-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+
+    .filter-tab {
+      background: #FFFFFF;
+      border: 1px solid var(--border-color);
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--color-text-secondary);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .filter-tab:hover, .filter-tab.active {
+      background: var(--color-primary);
+      color: #FFFFFF;
+      border-color: var(--color-primary);
+      box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);
+    }
+
+    .projects-list {
+      display: flex;
+      flex-direction: column;
+      gap: 44px;
+    }
+
+    .project-card {
+      background: var(--bg-surface);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
+      transition: all var(--transition-fast);
+    }
+
+    .project-card:hover {
+      box-shadow: var(--shadow-hover);
+      border-color: #CBD5E1;
+    }
+
+    /* Header của từng thẻ dự án */
+    .project-header-bar {
+      padding: 24px 32px;
+      background: linear-gradient(to right, #F8FAFC, #FFFFFF);
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .project-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .project-num {
+      display: inline-grid;
+      place-items: center;
+      width: 32px;
+      height: 32px;
+      border-radius: var(--radius-full);
+      background: var(--color-primary);
+      color: #FFFFFF;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 800;
+    }
+
+    .project-category {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .project-timeline {
+      font-size: 0.8125rem;
+      color: var(--color-text-muted);
+      background: var(--bg-surface-alt);
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+    }
+
+    /* Nội dung chi tiết của dự án */
+    .project-body {
+      padding: 36px 32px;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 36px;
+      align-items: start;
+    }
+
+    .project-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.625rem;
+      font-weight: 800;
+      color: var(--color-primary-dark);
+      letter-spacing: -0.02em;
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+
+    .project-desc-short {
+      font-size: 0.9375rem;
+      color: var(--color-text-secondary);
+      margin-bottom: 28px;
+    }
+
+    /* Cột 3 mục: Mục tiêu - Vai trò - Kết quả */
+    .project-framework {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .framework-block {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      padding: 20px;
+      border: 1px solid var(--border-color);
+      position: relative;
+      transition: all var(--transition-fast);
+    }
+
+    .framework-block:hover {
+      border-color: #CBD5E1;
+      background: #FAFAFA;
+    }
+
+    .framework-block.target-block {
+      border-left: 4px solid #3B82F6;
+    }
+
+    .framework-block.role-block {
+      border-left: 4px solid #8B5CF6;
+    }
+
+    .framework-block.result-block {
+      border-left: 4px solid #10B981;
+      background: linear-gradient(to right, rgba(16, 185, 129, 0.03), #FFFFFF);
+    }
+
+    .framework-heading {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.9375rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .target-block .framework-heading { color: #1D4ED8; }
+    .role-block .framework-heading { color: #6D28D9; }
+    .result-block .framework-heading { color: #047857; }
+
+    .framework-text {
+      font-size: 0.9rem;
+      color: var(--color-text-secondary);
+      line-height: 1.65;
+    }
+
+    .framework-text ul {
+      margin-left: 18px;
+      margin-top: 6px;
+    }
+
+    .framework-text li {
+      margin-bottom: 4px;
+    }
+
+    /* Cột phải: Media Mockup & Chỉ số định lượng */
+    .project-visual-col {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Khung hình ảnh dự án (Hình ảnh & Placeholder) */
+    .project-image-box {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      background: #F1F5F9;
+      aspect-ratio: 16/10;
+      position: relative;
+    }
+
+    .project-image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .project-img-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+      background: linear-gradient(135deg, #F8FAFC 0%, #EEF2F6 100%);
+      color: var(--color-text-muted);
+    }
+
+    .project-img-placeholder svg {
+      margin-bottom: 12px;
+      color: var(--color-primary-light);
+    }
+
+    .project-img-placeholder-title {
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--color-primary-dark);
+      margin-bottom: 4px;
+    }
+
+    .project-img-placeholder-sub {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+    }
+
+    /* Bảng số liệu nổi bật (Results Metric Highlights) */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .metric-card {
+      background: #FFFFFF;
+      padding: 16px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      text-align: center;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .metric-val {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.375rem;
+      font-weight: 800;
+      color: var(--color-primary-dark);
+      line-height: 1.2;
+    }
+
+    .metric-val.highlight-green {
+      color: #059669;
+    }
+
+    .metric-name {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+      margin-top: 4px;
+      font-weight: 600;
+    }
+
+    /* Footer của Project Card */
+    .project-footer-bar {
+      padding: 18px 32px;
+      background: #FAFAFA;
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag-item {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-text-secondary);
+      background: #FFFFFF;
+      border: 1px solid var(--border-color);
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+    }
+
+    @media (max-width: 900px) {
+      .project-body {
+        grid-template-columns: 1fr;
+        padding: 24px 20px;
+        gap: 24px;
+      }
+      .project-header-bar, .project-footer-bar {
+        padding: 16px 20px;
+      }
+      .project-title {
+        font-size: 1.35rem;
+      }
+    }
+
+    /* ==========================================================================
+       CANVA CALLOUT BANNER (NÚT XEM PORTFOLIO CANVA NỔI BẬT)
+       ========================================================================== */
+    .canva-banner-section {
+      padding: 60px 0;
+      background: linear-gradient(135deg, #0F172A 0%, #1E1B4B 50%, #1E3A8A 100%);
+      color: #FFFFFF;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .canva-banner-section::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(125, 42, 232, 0.4) 0%, rgba(0,0,0,0) 70%);
+      pointer-events: none;
+    }
+
+    .canva-banner-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 40px;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .canva-banner-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 2.125rem;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 14px;
+      letter-spacing: -0.02em;
+    }
+
+    .canva-banner-desc {
+      font-size: 1.0625rem;
+      color: #CBD5E1;
+      line-height: 1.65;
+      margin-bottom: 24px;
+    }
+
+    .canva-features-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .canva-feature-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #E2E8F0;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      backdrop-filter: blur(4px);
+    }
+
+    .canva-btn-box {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: var(--radius-xl);
+      padding: 32px 24px;
+      backdrop-filter: blur(10px);
+    }
+
+    .canva-preview-badge {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #38BDF8;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .canva-btn-main {
+      width: 100%;
+      padding: 16px 24px;
+      font-size: 1.0625rem;
+      font-weight: 700;
+      border-radius: var(--radius-full);
+      background: linear-gradient(135deg, #8B5CF6 0%, #06B6D4 100%);
+      color: #FFFFFF;
+      box-shadow: 0 10px 25px rgba(139, 92, 246, 0.5);
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: all var(--transition-bounce);
+    }
+
+    .canva-btn-main:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 16px 35px rgba(139, 92, 246, 0.65);
+    }
+
+    .canva-btn-subnote {
+      font-size: 0.8125rem;
+      color: #94A3B8;
+      margin-top: 12px;
+    }
+
+    @media (max-width: 900px) {
+      .canva-banner-grid {
+        grid-template-columns: 1fr;
+        text-align: left;
+      }
+      .canva-banner-title {
+        font-size: 1.75rem;
+      }
+    }
+
+    /* ==========================================================================
+       KINH NGHIỆM LÀM VIỆC & DỰ ÁN ĐÃ THỰC HIỆN (EXPERIENCE TIMELINE)
+       ========================================================================== */
+    .experience-section {
+      background: #FFFFFF;
+    }
+
+    .timeline-container {
+      position: relative;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 20px;
+      width: 2px;
+      background: var(--border-color);
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 54px;
+      margin-bottom: 36px;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: 11px;
+      top: 4px;
+      width: 20px;
+      height: 20px;
+      border-radius: var(--radius-full);
+      background: #FFFFFF;
+      border: 4px solid var(--color-primary);
+      box-shadow: 0 0 0 4px rgba(30, 64, 175, 0.15);
+    }
+
+    .timeline-card {
+      background: var(--bg-page);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      border: 1px solid var(--border-color);
+      transition: all var(--transition-fast);
+    }
+
+    .timeline-card:hover {
+      border-color: #CBD5E1;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-card);
+    }
+
+    .timeline-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .timeline-company {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.125rem;
+      font-weight: 800;
+      color: var(--color-primary-dark);
+    }
+
+    .timeline-period {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      background: var(--color-primary-soft);
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+    }
+
+    .timeline-role {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      color: var(--color-text-secondary);
+      margin-bottom: 12px;
+    }
+
+    .timeline-desc {
+      font-size: 0.875rem;
+      color: var(--color-text-secondary);
+      line-height: 1.65;
+    }
+
+    /* ==========================================================================
+       SECTION LIÊN HỆ (CONTACT SECTION)
+       ========================================================================== */
+    .contact-section {
+      background-color: var(--bg-page);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 40px;
+    }
+
+    .contact-info-card {
+      background: var(--bg-surface);
+      border-radius: var(--radius-xl);
+      padding: 36px 30px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-card);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .contact-card-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--color-primary-dark);
+      margin-bottom: 10px;
+    }
+
+    .contact-card-desc {
+      font-size: 0.9375rem;
+      color: var(--color-text-secondary);
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+
+    .contact-channels {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    .contact-channel-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 12px 16px;
+      background: var(--bg-surface-alt);
+      border-radius: var(--radius-md);
+      border: 1px solid transparent;
+      transition: all var(--transition-fast);
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+    }
+
+    .contact-channel-item:hover {
+      background: #FFFFFF;
+      border-color: var(--color-primary-light);
+      transform: translateX(4px);
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .channel-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-md);
+      background: #FFFFFF;
+      color: var(--color-primary);
+      display: grid;
+      place-items: center;
+      box-shadow: var(--shadow-subtle);
+      flex-shrink: 0;
+    }
+
+    .channel-icon.zalo-icon {
+      background: #0068FF;
+      color: #FFFFFF;
+    }
+
+    .channel-details {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .channel-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .channel-value {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      color: var(--color-primary-dark);
+    }
+
+    .copy-btn {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      color: var(--color-text-muted);
+      padding: 6px;
+      border-radius: var(--radius-sm);
+      transition: all var(--transition-fast);
+      display: grid;
+      place-items: center;
+    }
+
+    .copy-btn:hover {
+      color: var(--color-primary);
+      background: rgba(30, 64, 175, 0.08);
+    }
+
+    .social-links-area {
+      padding-top: 20px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .social-title {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+
+    .social-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .social-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      background: var(--bg-surface-alt);
+      color: var(--color-text-secondary);
+      border: 1px solid var(--border-color);
+      transition: all var(--transition-fast);
+    }
+
+    .social-pill:hover {
+      background: #FFFFFF;
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+    }
+
+    /* Form gửi tin nhắn */
+    .contact-form-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-xl);
+      padding: 36px 32px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-card);
+    }
+
+    .form-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.375rem;
+      font-weight: 800;
+      color: var(--color-primary-dark);
+      margin-bottom: 8px;
+    }
+
+    .form-desc {
+      font-size: 0.875rem;
+      color: var(--color-text-secondary);
+      margin-bottom: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--color-text-main);
+      margin-bottom: 6px;
+    }
+
+    .form-input, .form-textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      background-color: var(--bg-page);
+      font-size: 0.9375rem;
+      color: var(--color-text-main);
+      transition: all var(--transition-fast);
+      outline: none;
+    }
+
+    .form-input:focus, .form-textarea:focus {
+      background-color: #FFFFFF;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.15);
+    }
+
+    .form-textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-alert {
+      display: none;
+      padding: 12px 16px;
+      border-radius: var(--radius-md);
+      margin-bottom: 20px;
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+
+    .form-alert.success {
+      display: block;
+      background: #D1FAE5;
+      color: #065F46;
+      border: 1px solid #A7F3D0;
+    }
+
+    @media (max-width: 900px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      .contact-form-card {
+        padding: 24px 20px;
+      }
+    }
+
+    /* ==========================================================================
+       MODAL XEM TRỰC TIẾP CANVA (CANVA VIEWER MODAL)
+       ========================================================================== */
+    .canva-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .canva-modal.active {
+      display: flex;
+    }
+
+    .canva-modal-dialog {
+      background: #FFFFFF;
+      width: 100%;
+      max-width: 1080px;
+      height: 90vh;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .canva-modal-header {
+      padding: 16px 24px;
+      background: #0F172A;
+      color: #FFFFFF;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .canva-modal-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.125rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .canva-modal-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .modal-close-btn {
+      background: transparent;
+      border: none;
+      color: #94A3B8;
+      cursor: pointer;
+      padding: 6px;
+      border-radius: var(--radius-sm);
+      display: grid;
+      place-items: center;
+      transition: all var(--transition-fast);
+    }
+
+    .modal-close-btn:hover {
+      color: #FFFFFF;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .canva-modal-body {
+      flex: 1;
+      width: 100%;
+      position: relative;
+      background: #1E293B;
+    }
+
+    .canva-modal-body iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Toast Notification */
+    .toast-notice {
+      position: fixed;
+      bottom: 84px;
+      right: 24px;
+      background: #0F172A;
+      color: #FFFFFF;
+      padding: 12px 20px;
+      border-radius: var(--radius-md);
+      font-size: 0.875rem;
+      font-weight: 600;
+      box-shadow: var(--shadow-hover);
+      z-index: 1001;
+      display: none;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ==========================================================================
+       FOOTER CHÂN TRANG
+       ========================================================================== */
+    .site-footer {
+      background-color: var(--color-primary-dark);
+      color: #94A3B8;
+      padding: 40px 0;
+      font-size: 0.875rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-brand {
+      color: #FFFFFF;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.125rem;
+      font-weight: 700;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .footer-links a:hover {
+      color: #FFFFFF;
+    }
+
+    /* ==========================================================================
+       MOBILE STICKY ACTION BAR (THANH HÀNH ĐỘNG DƯỚI ĐÁY CHO ĐIỆN THOẠI)
+       ========================================================================== */
+    .mobile-bottom-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 64px;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-top: 1px solid var(--border-color);
+      box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
+      z-index: 999;
+      padding: 6px 12px;
+      align-items: center;
+      justify-content: space-around;
+      gap: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .mobile-bottom-bar {
+        display: flex;
+      }
+    }
+
+    .bottom-bar-btn {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+      font-size: 0.6875rem;
+      font-weight: 700;
+      color: var(--color-text-secondary);
+      text-decoration: none;
+      padding: 6px 4px;
+      border-radius: var(--radius-sm);
+    }
+
+    .bottom-bar-btn:active {
+      background: var(--bg-surface-alt);
+    }
+
+    .bottom-bar-btn.call-btn {
+      color: #059669;
+    }
+
+    .bottom-bar-btn.zalo-btn {
+      color: #0068FF;
+    }
+
+    .bottom-bar-btn.canva-btn-highlight {
+      background: linear-gradient(135deg, #7D2AE8 0%, #00C4CC 100%);
+      color: #FFFFFF;
+      border-radius: var(--radius-full);
+      padding: 8px 12px;
+      flex: 1.3;
+      box-shadow: 0 4px 12px rgba(125, 42, 232, 0.3);
+    }
+
+    .bottom-bar-btn.canva-btn-highlight span {
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       THANH ĐIỀU HƯỚNG CHÍNH (NAVBAR)
+       ========================================================================== -->
+  <header class="navbar" id="topNav">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-name">ĐOÀN ANH THƯ</span>
+        <span class="brand-role">Account Executive & Social Media</span>
+      </a>
+
+      <!-- Menu máy tính -->
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">Giới thiệu</a></li>
+          <li><a href="#competencies" class="nav-link">Thế mạnh</a></li>
+          <li><a href="#projects" class="nav-link">3 Dự án tiêu biểu</a></li>
+          <li><a href="#experience" class="nav-link">Kinh nghiệm</a></li>
+          <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Các nút hành động trên header -->
+      <div class="nav-actions">
+        <!-- Nút mở Canva Preview Trực Tiếp -->
+        <button type="button" class="btn btn-outline btn-sm btn-nav-desktop" onclick="openCanvaModal()" title="Xem trực tiếp Canva trong cửa sổ sổ nổi">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+          <span>Xem trực tiếp</span>
+        </button>
+
+        <!-- Nút Canva chính thức theo yêu cầu -->
+        <a href="https://www.canva.com/design/DAHOEOpFzY4/9f4RhXCTp3gY1Ie39wJcxA/view?utm_content=DAHOEOpFzY4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2a18f1f087#10" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn btn-canva btn-sm" 
+           title="Xem trọn bộ Portfolio thiết kế trên Canva">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+          <span>Xem portfolio Canva</span>
+        </a>
+
+        <!-- Nút Hamburger cho Mobile -->
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Mở menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Drawer Menu Mobile -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#hero" class="mobile-nav-link">Trang chủ</a>
+      <a href="#about" class="mobile-nav-link">Giới thiệu bản thân</a>
+      <a href="#competencies" class="mobile-nav-link">Kỹ năng cốt lõi</a>
+      <a href="#projects" class="mobile-nav-link">3 Dự án trọng tâm</a>
+      <a href="#experience" class="mobile-nav-link">Lộ trình kinh nghiệm</a>
+      <a href="#contact" class="mobile-nav-link">Thông tin liên hệ</a>
+      <a href="https://www.canva.com/design/DAHOEOpFzY4/9f4RhXCTp3gY1Ie39wJcxA/view?utm_content=DAHOEOpFzY4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2a18f1f087#10" target="_blank" rel="noopener noreferrer" style="color: var(--color-canva); font-weight: 700;">
+        ✨ Mở Portfolio trên Canva ↗
+      </a>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION (BANNER GIỚI THIỆU TỔNG QUAN)
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Cột thông tin giới thiệu -->
+        <div class="hero-content">
+          <div class="hero-status">
+            <span class="status-dot"></span>
+            <span>Sẵn sàng tiếp nhận dự án Account & Social Media mới</span>
+          </div>
+
+          <h1 class="hero-title">
+            Xin chào, tôi là <br>
+            <span class="highlight">ĐOÀN ANH THƯ</span>
+          </h1>
+
+          <div class="hero-roles">
+            <span class="role-pill">Account Executive</span>
+            <span class="role-pill">Social Media Specialist</span>
+            <span class="role-pill">Project Coordinator</span>
+          </div>
+
+          <p class="hero-bio">
+            Chuyên viên quản lý và điều phối các dự án Marketing từ khâu lập kế hoạch (planning), thực thi (execution) đến nghiệm thu kết quả (final delivery). 
+            Thế mạnh cầu nối chiến lược giữa khách hàng và nội bộ, tối ưu hoá chiến dịch Social Media, sản xuất nội dung số và quản trị quan hệ đối tác dài hạn.
+          </p>
+
+          <div class="hero-buttons">
+            <!-- Nút Canva nổi bật nhất theo yêu cầu -->
+            <a href="https://www.canva.com/design/DAHOEOpFzY4/9f4RhXCTp3gY1Ie39wJcxA/view?utm_content=DAHOEOpFzY4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2a18f1f087#10" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn-canva btn-lg"
+               id="heroCanvaBtn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+              </svg>
+              <span>Xem portfolio Canva</span>
+            </a>
+
+            <a href="#projects" class="btn btn-outline btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+              <span>Xem 3 dự án tiêu biểu</span>
+            </a>
+
+            <a href="#contact" class="btn btn-outline btn-lg">
+              <span>Liên hệ ngay</span>
+            </a>
+          </div>
+
+          <!-- Thông số ấn tượng nhanh -->
+          <div class="hero-stats-strip">
+            <div class="stat-item">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Dự án Marketing điều phối đồng thời / tháng</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">90%+</span>
+              <span class="stat-label">Tỷ lệ hoàn thành Media KPI cam kết</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Bài PR báo chí lớn/tháng (VnExpress, CafeF...)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cột hiển thị hình ảnh đại diện / Avatar Card -->
+        <div class="hero-visual">
+          <div class="avatar-card-wrapper">
+            <div class="avatar-decor-bg"></div>
+            <div class="avatar-card">
+              <div class="avatar-img-container">
+                <!-- ==========================================================================
+                     PLACEHOLDER ẢNH ĐẠI DIỆN:
+                     Bạn có thể thay thế thẻ bên dưới bằng ảnh thực tế:
+                     <img src="duong-dan-anh-cua-ban.jpg" alt="Đoàn Anh Thư">
+                     ========================================================================== -->
+                <div class="avatar-placeholder">
+                  <div class="avatar-placeholder-circle">AT</div>
+                  <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 4px;">Đoàn Anh Thư</h3>
+                  <p style="font-size: 0.8125rem; opacity: 0.8; margin-bottom: 12px;">Account Executive & Social Media</p>
+                  <span class="placeholder-badge" style="background: rgba(254, 243, 199, 0.2); color: #FDE68A; border-color: rgba(253, 230, 138, 0.4);">
+                    📷 Chỗ trống: Thay ảnh chân dung vào đây
+                  </span>
+                </div>
+              </div>
+
+              <!-- Huy hiệu nổi bên dưới ảnh -->
+              <div class="avatar-floating-badge">
+                <div class="floating-badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="floating-badge-text">Cam kết KPI & Minh bạch</div>
+                  <div class="floating-badge-sub">Đồng hành trọn vẹn vòng đời dự án</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION GIỚI THIỆU BẢN THÂN & HỌC VẤN (ABOUT ME)
+       ========================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Giới thiệu tổng quan</span>
+        <h2 class="section-title">Hồ Sơ Năng Lực & Tầm Nhìn Nghề Nghiệp</h2>
+        <p class="section-subtitle">
+          Tập trung vào giải pháp, tinh thần trách nhiệm cao và khả năng phối hợp liên phòng ban nhịp nhàng nhằm mang lại kết quả tăng trưởng thực tế.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Thẻ tóm tắt thông tin cá nhân & định hướng -->
+        <div class="about-card">
+          <h3 class="about-heading">
+            <span class="about-heading-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </span>
+            <span>Về Tôi (About Me)</span>
+          </h3>
+          
+          <p class="about-prose">
+            Tôi có bề dày kinh nghiệm quản lý và điều phối các dự án Marketing từ khâu tiếp nhận yêu cầu, lập dự toán ngân sách, điều phối sản xuất cho đến tối ưu quảng cáo trên các nền tảng số. 
+            Với tư duy định hướng khách hàng kết hợp cùng kinh nghiệm thực chiến trong các chiến dịch Social Media, tôi luôn chủ động giải quyết thách thức, đảm bảo mọi cam kết về tiến độ và chất lượng.
+          </p>
+
+          <div class="about-info-list">
+            <div class="info-row">
+              <span class="info-label">🎓 Học vấn:</span>
+              <span class="info-value">Đại học Văn Lang (VLU) – Quản trị Marketing (2020 – 2024)</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">📍 Khu vực:</span>
+              <span class="info-value">34 QL1A, Phường Thới An, Quận 12, TP. Hồ Chí Minh</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">💼 Định hướng:</span>
+              <span class="info-value">Account Executive / Social Media Lead / Project Management</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">🌐 Ngôn ngữ:</span>
+              <span class="info-value">Tiếng Việt (Bản ngữ), Tiếng Anh giao tiếp & xử lý tài liệu</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thẻ năng lực cốt lõi (Core Competencies) -->
+        <div class="about-card" id="competencies">
+          <h3 class="about-heading">
+            <span class="about-heading-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </span>
+            <span>Bộ Kỹ Năng Cốt Lõi (Core Competencies)</span>
+          </h3>
+
+          <div class="competency-grid">
+            <div class="comp-card">
+              <div class="comp-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <h4 class="comp-title">Quản trị Dự án</h4>
+              <ul class="comp-skills">
+                <li>Project Delivery Management</li>
+                <li>Timeline & Resource Planning</li>
+                <li>Workflow & Quy trình tối ưu</li>
+                <li>Kiểm soát rủi ro & tiến độ</li>
+              </ul>
+            </div>
+
+            <div class="comp-card">
+              <div class="comp-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h4 class="comp-title">Account & Khách Hàng</h4>
+              <ul class="comp-skills">
+                <li>Client Relationship Management</li>
+                <li>Tư vấn chiến lược (Consulting)</li>
+                <li>Thu thập & làm rõ Brief</li>
+                <li>Quản trị kỳ vọng đối tác</li>
+              </ul>
+            </div>
+
+            <div class="comp-card">
+              <div class="comp-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <h4 class="comp-title">Social Media & Ads</h4>
+              <ul class="comp-skills">
+                <li>Kế hoạch nội dung đa kênh</li>
+                <li>Facebook Ads & TikTok Ads</li>
+                <li>Phát triển cộng đồng fanpage</li>
+                <li>KOLs/KOCs & Booking PR</li>
+              </ul>
+            </div>
+
+            <div class="comp-card">
+              <div class="comp-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <h4 class="comp-title">Công Cụ & Sáng Tạo AI</h4>
+              <ul class="comp-skills">
+                <li>Canva Pro & Adobe Photoshop</li>
+                <li>Sản xuất AI Video & AI Content</li>
+                <li>Báo cáo Performance & Analytics</li>
+                <li>Thiết lập biểu mẫu quản lý</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3 DỰ ÁN TRỌNG TÂM (3 FEATURED PROJECTS)
+       Cấu trúc tiêu chuẩn: MỤC TIÊU – VAI TRÒ – KẾT QUẢ
+       Có chỗ trống trực quan cho thông tin, ảnh và số liệu chưa cung cấp
+       ========================================================================== -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Case Studies & Dự Án</span>
+        <h2 class="section-title">3 Dự Án Tiêu Biểu Trong Thực Tế</h2>
+        <p class="section-subtitle">
+          Minh chứng cho năng lực hoạch định, điều phối chiến dịch quảng cáo đa kênh và quản trị mối quan hệ khách hàng hiệu quả.
+        </p>
+      </div>
+
+      <!-- Tab lọc dự án nhanh -->
+      <div class="project-filter-tabs">
+        <button class="filter-tab active" onclick="filterProjects('all', this)">Tất cả 3 dự án</button>
+        <button class="filter-tab" onclick="filterProjects('fnb', this)">F&B Multi-Channel Ads</button>
+        <button class="filter-tab" onclick="filterProjects('community', this)">Social Media & Community</button>
+        <button class="filter-tab" onclick="filterProjects('media', this)">PR Báo Chí & AI Video</button>
+      </div>
+
+      <div class="projects-list">
+
+        <!-- ==================================================================
+             DỰ ÁN 1: CHIẾN DỊCH TĂNG TRƯỞNG F&B ĐA KÊNH (SEVEN MARKETING)
+             ================================================================== -->
+        <article class="project-card" id="project-1" data-category="fnb">
+          <!-- Thanh tiêu đề meta -->
+          <div class="project-header-bar">
+            <div class="project-meta-left">
+              <span class="project-num">01</span>
+              <span class="project-category">F&B Marketing & Multi-channel Ads</span>
+              <span class="project-timeline">2023 – 2025 (Seven Marketing)</span>
+            </div>
+            <div>
+              <span class="placeholder-badge">📌 Khách hàng: Chuỗi Thương Hiệu F&B [Tên Brand]</span>
+            </div>
+          </div>
+
+          <!-- Thân dự án chia 2 cột -->
+          <div class="project-body">
+            <!-- Cột trái: 3 mục Mục tiêu – Vai trò – Kết quả -->
+            <div class="project-content-col">
+              <h3 class="project-title">Chiến Dịch Tăng Trưởng Nhận Diện & Doanh Số Chuỗi F&B Qua Facebook & TikTok Ads</h3>
+              <p class="project-desc-short">
+                Điều phối chiến dịch quảng cáo chuyển đổi kết hợp xây dựng thương hiệu (Branding & Performance) trong ngành dịch vụ ăn uống (F&B), tối ưu chi phí quảng cáo và thu hút khách hàng đến điểm bán.
+              </p>
+
+              <div class="project-framework">
+                <!-- 1. MỤC TIÊU -->
+                <div class="framework-block target-block">
+                  <h4 class="framework-heading">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="2"></circle></svg>
+                    <span>1. Mục Tiêu (Objectives)</span>
+                  </h4>
+                  <div class="framework-text">
+                    <ul>
+                      <li>Đẩy mạnh nhận diện thương hiệu cho dòng sản phẩm theo mùa và các combo ưu đãi tại chuỗi cửa hàng.</li>
+                      <li>Tối ưu chi phí mỗi lượt tương tác/tin nhắn (CPA/CPM) trên Facebook Ads và tăng tỷ lệ xem video trên TikTok Ads.</li>
+                      <li>Đạt chỉ tiêu doanh số tại các điểm bán mục tiêu: <span class="placeholder-badge">[Chèn mục tiêu doanh số: ví dụ tăng 30% traffic]</span>.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 2. VAI TRÒ -->
+                <div class="framework-block role-block">
+                  <h4 class="framework-heading">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <span>2. Vai Trò (Role & Responsibilities)</span>
+                  </h4>
+                  <div class="framework-text">
+                    <strong>Vị trí: Account Remote / Project Coordinator</strong>
+                    <ul>
+                      <li>Làm việc trực tiếp với khách hàng: tiếp nhận brief, thấu hiểu yêu cầu và tư vấn chiến lược dựa trên xu hướng thị trường F&B.</li>
+                      <li>Lập kế hoạch phân bổ ngân sách, timeline thực thi cho đội ngũ sáng tạo (Content, Graphic, Video) và chuyên viên kỹ thuật Ads.</li>
+                      <li>Theo dõi, đo lường sát sao các chỉ số KPI chiến dịch (Branding reach, Traffic, Sales conversion) và báo cáo định kỳ hàng tuần/tháng.</li>
+                      <li>Xử lý nhanh chóng các phản hồi từ đối tác, thương thảo hợp đồng và hướng dẫn hỗ trợ 02 bạn thực tập sinh trong dự án.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 3. KẾT QUẢ -->
+                <div class="framework-block result-block">
+                  <h4 class="framework-heading">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    <span>3. Kết Quả (Key Results & Impact)</span>
+                  </h4>
+                  <div class="framework-text">
+                    <ul>
+                      <li><strong>Vượt KPI cam kết:</strong> Đạt <span class="placeholder-badge">[Chèn % hoàn thành: ví dụ 120% KPI]</span> về lượng tương tác và số lượt nhắn tin hỏi đặt bàn.</li>
+                      <li><strong>Tối ưu ngân sách:</strong> Giảm chi phí trên mỗi kết quả (Cost per Result) xuống <span class="placeholder-badge">[Chèn % tiết kiệm: ví dụ 15 - 20%]</span> so với giai đoạn trước.</li>
+                      <li><strong>Tăng trưởng giá trị hợp tác:</strong> Khách hàng đánh giá cao tính chủ động, tiếp tục gia hạn hợp đồng và giới thiệu thêm <strong>5–7 dự án mới</strong> thông qua mạng lưới đối tác.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cột phải: Khung ảnh chiến dịch & Thẻ số liệu -->
+            <div class="project-visual-col">
+              <!-- ==========================================================
+                   PLACEHOLDER HÌNH ẢNH DỰ ÁN 1
+                   Thay thế khối bên dưới bằng:
+                   <img src="du-an-1-fb-ads.jpg" alt="Chiến dịch F&B">
+                   ========================================================== -->
+              <div class="project-image-box">
+                <div class="project-img-placeholder">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                  </svg>
+                  <div class="project-img-placeholder-title">Ảnh Minh Họa Chiến Dịch F&B</div>
+                  <div class="project-img-placeholder-sub">Ảnh Dashboard Báo Cáo Ads / Creative Ads Mockup</div>
+                  <div style="margin-top: 8px;">
+                    <span class="placeholder-badge">🖼️ Chỗ trống: Chèn ảnh dự án 1 tại đây</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Thẻ các số liệu thống kê (Metrics) -->
+              <div class="metrics-grid">
+                <div class="metric-card">
+                  <div class="metric-val highlight-green">
+                    <span class="placeholder-badge">[Số liệu: 125%]</span>
+                  </div>
+                  <div class="metric-name">Hoàn thành Media KPI</div>
+                </div>
+
+                <div class="metric-card">
+                  <div class="metric-val">
+                    <span class="placeholder-badge">[Số liệu: X00K+]</span>
+                  </div>
+                  <div class="metric-name">Tổng lượt Reach tự nhiên & Ads</div>
+                </div>
+
+                <div class="metric-card">
+                  <div class="metric-val highlight-green">
+                    <span class="placeholder-badge">[Số liệu: -18%]</span>
+                  </div>
+                  <div class="metric-name">Tối ưu CPA trung bình</div>
+                </div>
+
+                <div class="metric-card">
+                  <div class="metric-val">5–7</div>
+                  <div class="metric-name">Dự án mới từ giới thiệu</div>
+                </div>
+              </div>
+
+              <!-- Ghi chú nhanh cho người xem portfolio -->
+              <div class="placeholder-box">
+                💡 <em>Chi tiết bảng ngân sách, kế hoạch nội dung và visual sáng tạo được trình bày chi tiết trong bản Canva Portfolio.</em>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer thẻ dự án -->
+          <div class="project-footer-bar">
+            <div class="project-tags">
+              <span class="tag-item">Client Management</span>
+              <span class="tag-item">Facebook Ads</span>
+              <span class="tag-item">TikTok Ads</span>
+              <span class="tag-item">Budget Optimization</span>
+              <span class="tag-item">F&B Industry</span>
+            </div>
+            <a href="https://www.canva.com/design/DAHOEOpFzY4/9f4RhXCTp3gY1Ie39wJcxA/view?utm_content=DAHOEOpFzY4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2a18f1f087#10" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+              <span>Xem slide dự án trên Canva</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+        </article>
+
+
+        <!-- ==================================================================
+             DỰ ÁN 2: PHÁT TRIỂN KÊNH CỘNG ĐỒNG "TÔI LÀ DÂN BÌNH THẠNH" (BT COMMUNICATION)
+             ================================================================== -->
+        <article class="project-card" id="project-2" data-category="community">
+          <div class="project-header-bar">
+            <div class="project-meta-left">
+              <span class="project-num">02</span>
+              <span class="project-category">Social Media & Community Building</span>
+              <span class="project-timeline">Hiện tại (BT Communication)</span>
+            </div>
+            <div>
+              <span class="placeholder-badge">📌 Dự án: Fanpage "Tôi Là Dân Bình Thạnh"</span>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-content-col">
+              <h3 class="project-title">Xây Dựng Quy Trình Quản Trị & Phát Triển Kênh Cộng Đồng Đa Tương Tác</h3>
+              <p class="project-desc-short">
+                Thiết lập hệ thống vận hành nội dung, template quản lý chuyên nghiệp và triển khai các gói truyền thông quảng bá trên kênh cộng đồng địa phương có lượng tương tác cao.
+              </p>
+
+              <div class="project-framework">
+                <!-- 1. MỤC TIÊU -->
+                <div class="framework-block target-block">
+                  <h4 class="framework-heading">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="2"></circle></svg>
+                    <span>1. Mục Tiêu (Objectives)</span>
+                  </h4>
+                  <div class="framework-text">
+                    <ul>
+                      <li>Xây dựng kênh cộng đồng "Tôi Là Dân Bình Thạnh" trở thành điểm chạm tin cậy, tăng trưởng người theo dõi thực chất (organic followers).</li>
+                      <li>Chuẩn hóa quy trình sản xuất nội dung (Content Workflow) và các mẫu biểu quản lý tiến độ cho hơn 5+ khách hàng đồng thời.</li>
+                      <li>Khai thác thương mại hiệu quả thông qua việc tiếp nhận và triển khai bài đăng quảng cáo cho các nhãn hàng/đối tác địa phương.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 2. VAI TRÒ -->
+                <div class="framework-block role-block">
+                  <h4 class="framework-heading">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <span>2. Vai Trò (Role & Responsibilities)</span>
+                  </h4>
+                  <div class="framework-text">
+                    <strong>Vị trí: Marketing Executive & Account Lead</strong>
+                    <ul>
+                      <li>Trực tiếp tư vấn khách hàng từ khâu lên ý tưởng chiến dịch, định hướng góc nhìn bài viết (angles) đến nghiệm thu kết quả.</li>
+                      <li>Xây dựng toàn bộ hệ thống workflow của team, bao gồm: Template Briefing, Content Calendar và biểu mẫu nghiệm thu báo cáo.</li>
+                      <li>Lên kế hoạch nội dung hàng tuần/tháng, kiểm duyệt câu chữ, thiết kế hình ảnh bằng Canva/Photoshop và quản lý chiến dịch quảng cáo thúc đẩy tương tác.</li>
+                      <li>Điều phối làm việc cùng đối tác địa phương để tối ưu thời điểm đăng bài và tỷ lệ giữ chân người xem.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 3. KẾT QUẢ -->
+                <div class="framework-block result-block">
+                  <h4 class="framework-heading">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    <span>3. Kết Quả (Key Results & Impact)</span>
+                  </h4>
+                  <div class="framework-text">
+                    <ul>
+                      <li><strong>Tăng trưởng người theo dõi:</strong> Kênh duy trì lượng tương tác ổn định với hàng nghìn lượt reaction, share trên mỗi bài viết nổi bật.</li>
+                      <li><strong>Hiệu suất vận hành:</strong> Vận hành trơn tru các chiến dịch truyền thông cho <strong>5+ khách hàng</strong> cùng lúc mà không xảy ra sai sót về deadline.</li>
+                      <li><strong>Số liệu tăng trưởng tương tác:</strong> Tỷ lệ tương tác tự nhiên tăng <span class="placeholder-badge">[Chèn % tăng trưởng: ví dụ +45%]</span> nhờ định hướng bài viết bắt trend và gần gũi với đời sống địa phương.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cột phải: Media & Metrics -->
+            <div class="project-visual-col">
+              <!-- ==========================================================
+                   PLACEHOLDER HÌNH ẢNH DỰ ÁN 2
+                   Thay thế khối bên dưới bằng ảnh bài post viral hoặc fanpage:
+                   <img src="du-an-2-binh-thanh.jpg" alt="Dự án Bình Thạnh">
+                   ========================================================== -->
+              <div class="project-image-box">
+                <div class="project-img-placeholder">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                  </svg>
+                  <div class="project-img-placeholder-title">Ảnh Minh Họa Kênh "Tôi Là Dân Bình Thạnh"</div>
+                  <div class="project-img-placeholder-sub">Hình ảnh bài viết Viral / Giao diện tương tác Fanpage</div>
+                  <div style="margin-top: 8px;">
+                    <span class="placeholder-badge">🖼️ Chỗ trống: Chèn ảnh fanpage/content tại đây</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Thẻ số liệu đo lường -->
+              <div class="metrics-grid">
+                <div class="metric-card">
+                  <div class="metric-val highlight-green">
+                    <span class="placeholder-badge">[Số liệu: 50K+]</span>
+                  </div>
+                  <div class="metric-name">Cộng đồng thành viên</div>
+                </div>
+
+                <div class="metric-card">
+                  <div class="metric-val">
+                    <span class="placeholder-badge">[Số liệu: X0K+]</span>
+                  </div>
+                  <div class="metric-name">Lượt tương tác trung bình</div>
+                </div>
+
+                <div class="metric-card">
+                  <div class="metric-val highlight-green">100%</div>
+                  <div class="metric-name">Đúng hạn Content Calendar</div>
+                </div>
+
+                <div class="metric-card">
+                  <div class="metric-val">5+</div>
+                  <div class="metric-name">Đối tác thương hiệu đồng hành</div>
+                </div>
+              </div>
+
+              <div class="placeholder-box">
+                📌 <em>Hình ảnh mẫu kịch bản, các bài viết viral và quy trình template được cập nhật đầy đủ trong link Canva.</em>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-footer-bar">
+            <div class="project-tags">
+              <span class="tag-item">Community Management</span>
+              <span class="tag-item">Content Planning</span>
+              <span class="tag-item">Workflow Setup</span>
+              <span class="tag-item">Social Engagement</span>
+              <span class="tag-item">Canva Design</span>
+            </div>
+            <a href="https://www.canva.com/design/DAHOEOpFzY4/9f4RhXCTp3gY1Ie39wJcxA/view?utm_content=DAHOEOpFzY4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2a18f1f087#10" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+              <span>Xem slide dự án trên Canva</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+        </article>
+
+
+        <!-- ==================================================================
+             DỰ ÁN 3: TRUYỀN THÔNG TÍCH HỢP BÁO CHÍ PR & AI VIDEO (FACE COMM & BÁO PR)
+             ================================================================== -->
+        <article class="project-card" id="project-3" data-category="media">
+          <div class="project-header-bar">
+            <div class="project-meta-left">
+              <span class="project-num">03</span>
+              <span class="project-category">Integrated Media & AI Video Production</span>
+              <span class="project-timeline">2024 – Hiện tại (Face Comm & Freelance Báo PR)</span>
+            </div>
+            <div>
+              <span class="placeholder-badge">📌 Quy mô: 20+ Bài PR Báo Lớn / Tháng & AI Content</span>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-content-col">
+              <h3 class="project-title">Chiến Dịch Truyền Thông Tích Hợp: Lan Tỏa Báo Chí Đỉnh Cao Kết Hợp Sản Xuất Video AI</h3>
+              <p class="project-desc-short">
+                Phối hợp chiến dịch PR trên các đầu báo uy tín hàng đầu Việt Nam kết hợp ứng dụng công nghệ AI để tăng tốc sản xuất nội dung video ngắn, tối ưu chi phí và tăng độ nhận diện thương hiệu.
+              </p>
+
+              <div class="project-framework">
+                <!-- 1. MỤC TIÊU -->
+                <div class="framework-block target-block">
+                  <h4 class="framework-heading">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="2"></circle></svg>
+                    <span>1. Mục Tiêu (Objectives)</span>
+                  </h4>
+                  <div class="framework-text">
+                    <ul>
+                      <li>Đưa thương hiệu xuất hiện trên các trang báo điện tử uy tín nhất Việt Nam (VnExpress, Thanh Niên, CafeF...) nhằm củng cố niềm tin và danh tiếng thương hiệu.</li>
+                      <li>Phát triển nội dung dạng video ngắn (Short-form Video) tốc độ cao phục vụ các kênh TikTok/Reels của khách hàng với chi phí sản xuất tối ưu.</li>
+                      <li>Đạt chỉ tiêu hoàn thành Media KPI từ <strong>90%+ trở lên</strong> theo thỏa thuận cam kết dịch vụ.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 2. VAI TRÒ -->
+                <div class="framework-block role-block">
+                  <h4 class="framework-heading">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <span>2. Vai Trò (Role & Responsibilities)</span>
+                  </h4>
+                  <div class="framework-text">
+                    <strong>Vị trí: Project Coordinator & PR Specialist</strong>
+                    <ul>
+                      <li>Đầu mối điều phối chính (Primary Coordinator): từ tiếp nhận bảng báo giá, client briefing cho tới hoàn tất nghiệm thu và xuất bản bài viết.</li>
+                      <li>Nghiên cứu góc nhìn truyền thông (editorial angles), viết và biên tập hơn 20 bài PR mỗi tháng đúng chuẩn mực báo chí và phù hợp mục tiêu nhãn hàng.</li>
+                      <li>Ứng dụng công nghệ AI sáng tạo (AI Agent, AI Image & Video Editing): lập kế hoạch kịch bản và sản xuất từ 5–7 video ngắn mỗi ngày cho các kênh đối tác.</li>
+                      <li>Phối hợp làm việc với đội ngũ KOLs/KOCs, các nhà sản xuất và đối tác media buying để đảm bảo tiến độ lên bài đồng loạt.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 3. KẾT QUẢ -->
+                <div class="framework-block result-block">
+                  <h4 class="framework-heading">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    <span>3. Kết Quả (Key Results & Impact)</span>
+                  </h4>
+                  <div class="framework-text">
+                    <ul>
+                      <li><strong>Media KPI hoàn hảo:</strong> Luôn duy trì tỷ lệ đạt từ <strong>90% – 100% Media KPI</strong> cho hơn 10+ dự án truyền thông số đồng thời.</li>
+                      <li><strong>Độ phủ truyền thông rộng lớn:</strong> Đăng tải thành công 20+ bài báo/tháng trên VnExpress, CafeF, Thanh Niên, thu về hàng trăm ngàn lượt đọc.</li>
+                      <li><strong>Tối ưu tốc độ sản xuất video:</strong> Nhờ quy trình kết hợp công cụ AI, tốc độ sản xuất video tăng <span class="placeholder-badge">[Chèn % năng suất: ví dụ gấp 3 lần]</span>, đáp ứng nhu cầu đăng tải dày đặc của khách hàng.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cột phải: Media & Metrics -->
+            <div class="project-visual-col">
+              <!-- ==========================================================
+                   PLACEHOLDER HÌNH ẢNH DỰ ÁN 3
+                   Thay thế bằng ảnh bài báo PR / Clip demo AI:
+                   <img src="du-an-3-bao-pr-ai.jpg" alt="Dự án PR & AI Video">
+                   ========================================================== -->
+              <div class="project-image-box">
+                <div class="project-img-placeholder">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                    <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                  </svg>
+                  <div class="project-img-placeholder-title">Ảnh Minh Họa Báo PR & Video AI</div>
+                  <div class="project-img-placeholder-sub">Ảnh chụp bài báo VnExpress/CafeF & Giao diện Video AI</div>
+                  <div style="margin-top: 8px;">
+                    <span class="placeholder-badge">🖼️ Chỗ trống: Chèn ảnh bài báo/video tại đây</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Thẻ số liệu đo lường -->
+              <div class="metrics-grid">
+                <div class="metric-card">
+                  <div class="metric-val highlight-green">90%+</div>
+                  <div class="metric-name">Hoàn thành Media KPI</div>
+                </div>
+
+                <div class="metric-card">
+                  <div class="metric-val">20+</div>
+                  <div class="metric-name">Bài PR báo chí lớn / tháng</div>
+                </div>
+
+                <div class="metric-card">
+                  <div class="metric-val highlight-green">5–7</div>
+                  <div class="metric-name">Video AI hoàn thiện / ngày</div>
+                </div>
+
+                <div class="metric-card">
+                  <div class="metric-val">
+                    <span class="placeholder-badge">[Số liệu: 10+]</span>
+                  </div>
+                  <div class="metric-name">Kênh khách hàng vận hành</div>
+                </div>
+              </div>
+
+              <div class="placeholder-box">
+                📰 <em>Xem danh mục bài báo đã xuất bản và video mẫu đầy đủ trên link Canva.</em>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-footer-bar">
+            <div class="project-tags">
+              <span class="tag-item">Media Buying</span>
+              <span class="tag-item">PR Báo Chí (VnExpress, CafeF)</span>
+              <span class="tag-item">AI Content & Video Creation</span>
+              <span class="tag-item">KOL/KOC Coordination</span>
+              <span class="tag-item">Project Coordination</span>
+            </div>
+            <a href="https://www.canva.com/design/DAHOEOpFzY4/9f4RhXCTp3gY1Ie39wJcxA/view?utm_content=DAHOEOpFzY4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2a18f1f087#10" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+              <span>Xem slide dự án trên Canva</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CANVA CALLOUT BANNER - NÚT XEM TRỌN BỘ PORTFOLIO CANVA NỔI BẬT
+       Liên kết trực tiếp tới URL canva do người dùng cung cấp
+       ========================================================================== -->
+  <section class="canva-banner-section">
+    <div class="container">
+      <div class="canva-banner-grid">
+        <div class="canva-banner-content">
+          <span class="canva-preview-badge">Visual Presentation & Full Case Studies</span>
+          <h2 class="canva-banner-title">Khám Phá Trọn Bộ Portfolio Thiết Kế Đầy Đủ Trên Canva</h2>
+          <p class="canva-banner-desc">
+            Bản trình chiếu thiết kế visual chi tiết bao gồm toàn bộ báo cáo chiến dịch, hình ảnh thực tế, bảng phân tích hiệu suất và hồ sơ năng lực chi tiết của Đoàn Anh Thư.
+          </p>
+          <div class="canva-features-list">
+            <div class="canva-feature-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>10+ Trang Case Study Trực Quan</span>
+            </div>
+            <div class="canva-feature-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Mockup & Báo Cáo Thực Tế</span>
+            </div>
+            <div class="canva-feature-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Xem Tức Thì Không Cần Đăng Nhập</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Khối nút bấm lớn -->
+        <div class="canva-btn-box">
+          <a href="https://www.canva.com/design/DAHOEOpFzY4/9f4RhXCTp3gY1Ie39wJcxA/view?utm_content=DAHOEOpFzY4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2a18f1f087#10" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="canva-btn-main"
+             id="mainCanvaCalloutBtn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            <span>Mở Portfolio Trên Canva ↗</span>
+          </a>
+
+          <button type="button" class="btn btn-outline btn-sm" onclick="openCanvaModal()" style="margin-top: 12px; width: 100%; border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.15); color: #FFFFFF;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+            <span>Hoặc xem trực tiếp cửa sổ nổi tại đây</span>
+          </button>
+          
+          <span class="canva-btn-subnote">Mở trong tab mới • Tối ưu trên mọi kích thước màn hình</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       LỘ TRÌNH KINH NGHIỆM LÀM VIỆC (WORK EXPERIENCE)
+       ========================================================================== -->
+  <section class="experience-section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Hành trình phát triển</span>
+        <h2 class="section-title">Kinh Nghiệm Thực Chiến</h2>
+        <p class="section-subtitle">
+          Quá trình công tác và tích lũy năng lực điều phối qua nhiều mô hình agency và doanh nghiệp truyền thông.
+        </p>
+      </div>
+
+      <div class="timeline-container">
+
+        <!-- Face Communication -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-company">Face Communication</span>
+              <span class="timeline-period">2025 / Hiện tại</span>
+            </div>
+            <div class="timeline-role">Project Coordinator</div>
+            <p class="timeline-desc">
+              Quản lý hơn 10+ dự án tiếp thị số đa kênh (SEO, Social Media, Media Buying, Production). Là điều phối viên chính từ báo giá, briefing đến thực thi; làm việc cùng KOLs/KOCs, đối tác sản xuất; duy trì tỷ lệ hoàn thành 90%+ media KPI cam kết.
+            </p>
+          </div>
+        </div>
+
+        <!-- Nesa Studio -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-company">Nesa Studio</span>
+              <span class="timeline-period">2025 / Hiện tại</span>
+            </div>
+            <div class="timeline-role">Cộng tác viên Video AI & Content Production</div>
+            <p class="timeline-desc">
+              Sản xuất nội dung ứng dụng công nghệ AI cho 10+ khách hàng; lên kịch bản, tạo ảnh và biên tập 5–7 video ngắn mỗi ngày; tối ưu hóa mức độ tương tác và đáp ứng mục tiêu marketing hiện đại.
+            </p>
+          </div>
+        </div>
+
+        <!-- BT Communication -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-company">BT Communication</span>
+              <span class="timeline-period">Hiện tại</span>
+            </div>
+            <div class="timeline-role">Marketing Executive</div>
+            <p class="timeline-desc">
+              Quản trị toàn diện các dự án cho 5+ khách hàng: từ tư vấn, lên kế hoạch đến thực thi. Thiết lập quy trình làm việc (workflow), mẫu biểu quản lý dự án, xây dựng kế hoạch nội dung và điều phối quảng cáo cho kênh cộng đồng "Tôi Là Dân Bình Thạnh".
+            </p>
+          </div>
+        </div>
+
+        <!-- Freelance Báo PR -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-company">Freelance Báo PR</span>
+              <span class="timeline-period">2024 / Hiện tại</span>
+            </div>
+            <div class="timeline-role">PR Content Specialist</div>
+            <p class="timeline-desc">
+              Sáng tạo và sản xuất hơn 20+ bài viết PR mỗi tháng cho các cơ quan báo chí chính thống hàng đầu (VnExpress, Thanh Niên, CafeF...). Khai thác góc nhìn biên tập độc đáo, đảm bảo chuẩn mực chất lượng và tính hiệu quả cho nhãn hàng.
+            </p>
+          </div>
+        </div>
+
+        <!-- Reputyze Asia -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-company">Reputyze Asia</span>
+              <span class="timeline-period">2024 / 2025</span>
+            </div>
+            <div class="timeline-role">Account Executive</div>
+            <p class="timeline-desc">
+              Quản lý đồng thời 6–7 dự án (bao gồm 4–5 dự án kỹ thuật và 2 dự án Social Media). Đầu mối trao đổi chính với khách hàng, quản lý proposal, ngân sách, timeline và triển khai các chiến dịch quảng cáo số.
+            </p>
+          </div>
+        </div>
+
+        <!-- Seven Marketing -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-company">Seven Marketing</span>
+              <span class="timeline-period">2023 / 2025</span>
+            </div>
+            <div class="timeline-role">Account Remote</div>
+            <p class="timeline-desc">
+              Điều phối 20–22 dự án marketing mỗi tháng. Kiểm soát tiến độ, ngân sách, chiến dịch Facebook Ads & TikTok Ads, KPI thương hiệu và doanh thu. Tư vấn chiến lược thị trường F&B, hướng dẫn 2 thực tập sinh và mở rộng 5–7 dự án thông qua giới thiệu của khách hàng.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION LIÊN HỆ (CONTACT SECTION)
+       Hiển thị thông tin liên hệ chuẩn xác & Form gửi lời nhắn trực tiếp
+       ========================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Kết nối hợp tác</span>
+        <h2 class="section-title">Liên Hệ Với Đoàn Anh Thư</h2>
+        <p class="section-subtitle">
+          Sẵn sàng lắng nghe đề bài dự án mới hoặc cơ hội gia nhập đội ngũ Account & Social Media.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Cột thông tin liên lạc trực tiếp -->
+        <div class="contact-info-card">
+          <div>
+            <h3 class="contact-card-title">Thông Tin Cá Nhân</h3>
+            <p class="contact-card-desc">
+              Bạn có thể gọi điện trực tiếp, nhắn qua Zalo hoặc gửi email. Tôi sẽ phản hồi nhanh chóng trong vòng 24 giờ.
+            </p>
+
+            <div class="contact-channels">
+              <!-- Số điện thoại -->
+              <div class="contact-channel-item">
+                <a href="tel:0335471076" style="display: flex; align-items: center; gap: 16px; flex: 1;">
+                  <div class="channel-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">Số Điện Thoại / Hotline</span>
+                    <span class="channel-value">0335 471 076</span>
+                  </div>
+                </a>
+                <button type="button" class="copy-btn" onclick="copyToClipboard('0335471076', 'Đã chép số điện thoại!')" title="Sao chép số">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+
+              <!-- Zalo -->
+              <div class="contact-channel-item">
+                <a href="https://zalo.me/0335471076" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 16px; flex: 1;">
+                  <div class="channel-icon zalo-icon">
+                    <span style="font-weight: 800; font-size: 0.8125rem;">Zalo</span>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">Nhắn Zalo Trực Tiếp</span>
+                    <span class="channel-value">0335 471 076 (Anh Thư)</span>
+                  </div>
+                </a>
+                <button type="button" class="copy-btn" onclick="copyToClipboard('0335471076', 'Đã chép số Zalo!')" title="Sao chép số Zalo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+
+              <!-- Email -->
+              <div class="contact-channel-item">
+                <a href="mailto:doant160325@gmail.com" style="display: flex; align-items: center; gap: 16px; flex: 1;">
+                  <div class="channel-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">Hòm Thư Điện Tử</span>
+                    <span class="channel-value">doant160325@gmail.com</span>
+                  </div>
+                </a>
+                <button type="button" class="copy-btn" onclick="copyToClipboard('doant160325@gmail.com', 'Đã chép địa chỉ Email!')" title="Sao chép Email">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+
+              <!-- Địa chỉ -->
+              <div class="contact-channel-item" style="cursor: default;">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">Địa Điểm Làm Việc</span>
+                  <span class="channel-value">34 QL1A, Phường Thới An, Q.12, TP.HCM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chỗ trống các kênh mạng xã hội khác -->
+          <div class="social-links-area">
+            <div class="social-title">Mạng Xã Hội Khác (Placeholder)</div>
+            <div class="social-pills">
+              <!-- LinkedIn Placeholder -->
+              <a href="#" class="social-pill" onclick="showToast('Vui lòng chèn link LinkedIn cá nhân'); return false;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                <span>[Chèn link LinkedIn]</span>
+              </a>
+
+              <!-- Facebook Placeholder -->
+              <a href="#" class="social-pill" onclick="showToast('Vui lòng chèn link Facebook cá nhân'); return false;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                <span>[Chèn link Facebook]</span>
+              </a>
+
+              <!-- TikTok Placeholder -->
+              <a href="#" class="social-pill" onclick="showToast('Vui lòng chèn kênh TikTok'); return false;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+                <span>[Chèn kênh TikTok]</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cột Form gửi tin nhắn nhanh -->
+        <div class="contact-form-card">
+          <h3 class="form-title">Gửi Lời Nhắn Nhanh</h3>
+          <p class="form-desc">Bạn muốn thảo luận về dự án hay nhận báo giá kế hoạch truyền thông? Hãy để lại thông tin bên dưới:</p>
+
+          <div id="formSuccessAlert" class="form-alert success">
+            ✅ Cảm ơn bạn! Lời nhắn đã được ghi nhận. Đoàn Anh Thư sẽ liên lạc lại trong thời gian sớm nhất.
+          </div>
+
+          <form id="portfolioContactForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="senderName">Họ và Tên của bạn *</label>
+                <input type="text" id="senderName" class="form-input" placeholder="Ví dụ: Nguyễn Văn A" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="senderPhone">Số điện thoại / Zalo *</label>
+                <input type="tel" id="senderPhone" class="form-input" placeholder="Ví dụ: 0912 345 678" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="senderEmail">Email liên hệ</label>
+              <input type="email" id="senderEmail" class="form-input" placeholder="Ví dụ: contact@congty.com">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="projectService">Dịch vụ / Vị trí quan tâm</label>
+              <input type="text" id="projectService" class="form-input" placeholder="Ví dụ: Account Executive / Chiến dịch Social Media / PR Báo chí">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="senderMessage">Nội dung tin nhắn / Yêu cầu brief *</label>
+              <textarea id="senderMessage" class="form-textarea" placeholder="Mô tả sơ lược về mục tiêu chiến dịch, ngân sách hoặc vị trí tuyển dụng..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+              <span>Gửi Lời Nhắn Ngay</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER (CHÂN TRANG)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        Đoàn Anh Thư • Portfolio Cá Nhân
+      </div>
+      <p style="font-size: 0.8125rem;">
+        © <span id="currentYear">2026</span> Đoàn Anh Thư. All rights reserved. Định hướng Account Executive & Social Media.
+      </p>
+      <ul class="footer-links">
+        <li><a href="#hero">Về đầu trang</a></li>
+        <li><a href="#projects">3 Dự án</a></li>
+        <li>
+          <a href="https://www.canva.com/design/DAHOEOpFzY4/9f4RhXCTp3gY1Ie39wJcxA/view?utm_content=DAHOEOpFzY4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2a18f1f087#10" target="_blank" rel="noopener noreferrer" style="color: #A78BFA; font-weight: 600;">
+            Canva Portfolio ↗
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       THANH HÀNH ĐỘNG DƯỚI ĐÁY TRÊN ĐIỆN THOẠI (MOBILE STICKY ACTION BAR)
+       Hiển thị tiện lợi khi duyệt trên smartphone: Gọi ngay, Nhắn Zalo, Mở Canva
+       ========================================================================== -->
+  <nav class="mobile-bottom-bar" aria-label="Quick Actions">
+    <a href="tel:0335471076" class="bottom-bar-btn call-btn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+      </svg>
+      <span>Gọi điện</span>
+    </a>
+
+    <a href="https://zalo.me/0335471076" target="_blank" rel="noopener noreferrer" class="bottom-bar-btn zalo-btn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+      </svg>
+      <span>Nhắn Zalo</span>
+    </a>
+
+    <!-- Nút Canva nổi bật nhất trên điện thoại -->
+    <a href="https://www.canva.com/design/DAHOEOpFzY4/9f4RhXCTp3gY1Ie39wJcxA/view?utm_content=DAHOEOpFzY4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2a18f1f087#10" target="_blank" rel="noopener noreferrer" class="bottom-bar-btn canva-btn-highlight">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <polygon points="10 8 16 12 10 16 10 8"></polygon>
+      </svg>
+      <span>Xem Canva</span>
+    </a>
+
+    <a href="#contact" class="bottom-bar-btn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+        <polyline points="22,6 12,13 2,6"></polyline>
+      </svg>
+      <span>Để lại tin</span>
+    </a>
+  </nav>
+
+  <!-- ==========================================================================
+       MODAL XEM TRỰC TIẾP CANVA (CANVA VIEWER POPUP)
+       ========================================================================== -->
+  <div class="canva-modal" id="canvaViewerModal" role="dialog" aria-modal="true">
+    <div class="canva-modal-dialog">
+      <div class="canva-modal-header">
+        <div class="canva-modal-title">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          <span>Portfolio Canva - Đoàn Anh Thư</span>
+        </div>
+        <div class="canva-modal-actions">
+          <a href="https://www.canva.com/design/DAHOEOpFzY4/9f4RhXCTp3gY1Ie39wJcxA/view?utm_content=DAHOEOpFzY4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2a18f1f087#10" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" style="color: #FFFFFF; border-color: rgba(255,255,255,0.2); background: rgba(255,255,255,0.1);">
+            <span>Mở tab mới ↗</span>
+          </a>
+          <button type="button" class="modal-close-btn" onclick="closeCanvaModal()" aria-label="Đóng cửa sổ">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+      <div class="canva-modal-body">
+        <iframe id="canvaIframe" src="" allowfullscreen="allowfullscreen" allow="fullscreen" loading="lazy" title="Canva Portfolio Viewer"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notice -->
+  <div class="toast-notice" id="toastNotice">
+    <span id="toastMessage">Thông báo</span>
+  </div>
+
+  <!-- ==========================================================================
+       JAVASCRIPT NỘI BỘ (XỬ LÝ TƯƠNG TÁC, MENU MOBILE, GỬI FORM, MODAL)
+       ========================================================================== -->
+  <script>
+    // Cập nhật năm bản quyền tự động
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Xử lý bật/tắt Drawer Menu trên Mobile
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+    if (mobileMenuBtn && mobileDrawer) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileDrawer.classList.toggle('active');
+      });
+
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileDrawer.classList.remove('active');
+        });
+      });
+    }
+
+    // Đổi hiệu ứng shadow cho navbar khi cuộn chuột
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('topNav');
+      if (window.scrollY > 20) {
+        nav.style.boxShadow = '0 4px 20px rgba(15, 23, 42, 0.08)';
+      } else {
+        nav.style.boxShadow = 'none';
+      }
+    });
+
+    // Xử lý nộp Form Liên Hệ (Mô phỏng phản hồi trải nghiệm)
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const form = document.getElementById('portfolioContactForm');
+      const successAlert = document.getElementById('formSuccessAlert');
+
+      // Ẩn form tạm thời và hiện thông báo cảm ơn
+      successAlert.style.display = 'block';
+      form.reset();
+
+      // Cuộn nhẹ tới thông báo
+      successAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      setTimeout(() => {
+        successAlert.style.display = 'none';
+      }, 6000);
+    }
+
+    // Mở / Đóng Modal Canva Viewer
+    const canvaUrl = "https://www.canva.com/design/DAHOEOpFzY4/9f4RhXCTp3gY1Ie39wJcxA/view?embed";
+    function openCanvaModal() {
+      const modal = document.getElementById('canvaViewerModal');
+      const iframe = document.getElementById('canvaIframe');
+      if (!iframe.src || iframe.src === "about:blank" || iframe.src === window.location.href) {
+        iframe.src = canvaUrl;
+      }
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCanvaModal() {
+      const modal = document.getElementById('canvaViewerModal');
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // Đóng modal khi bấm phím Esc hoặc click bên ngoài
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeCanvaModal();
+    });
+
+    document.getElementById('canvaViewerModal').addEventListener('click', (e) => {
+      if (e.target.id === 'canvaViewerModal') closeCanvaModal();
+    });
+
+    // Lọc các dự án theo tab
+    function filterProjects(category, btnElement) {
+      document.querySelectorAll('.filter-tab').forEach(tab => tab.classList.remove('active'));
+      btnElement.classList.add('active');
+
+      const cards = document.querySelectorAll('.project-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Hàm sao chép vào bộ nhớ tạm
+    function copyToClipboard(text, message) {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast(message);
+      }).catch(() => {
+        showToast('Không thể sao chép tự động: ' + text);
+      });
+    }
+
+    // Hàm hiển thị Toast thông báo nhanh
+    function showToast(msg) {
+      const toast = document.getElementById('toastNotice');
+      const toastMsg = document.getElementById('toastMessage');
+      toastMsg.textContent = msg;
+      toast.style.display = 'flex';
+      setTimeout(() => {
+        toast.style.display = 'none';
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
